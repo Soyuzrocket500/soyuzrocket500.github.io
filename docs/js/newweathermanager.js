@@ -37,7 +37,7 @@ function spinything() {
   setTimeout(function () {
     clearInterval(rotinterval)
     $("#startup").fadeOut(0);
-  }, 5000)
+  }, 50)
 
   };
   spinything()
