@@ -144,7 +144,7 @@ function getMainLoc(configFailed) {
     }
   } else {
     // get lat lon from user's ip
-    $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+   $.getJSON("https://pro.ip-api.com/json/?key=AmUN9xAaQALVYu6&exposeDate=false", function (data) {
       getExtraLocs(data.lat,data.lon,true);
       maincitycoords.name = data.city
       $("#locationname").text("location name: "+data.city)
