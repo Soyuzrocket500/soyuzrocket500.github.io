@@ -1155,7 +1155,7 @@ function grabHealthData() {
   })
 }
 function grabAirportDelayData() {
-    $.getJSON('http://'+document.location.hostname+':8081/https://nasstatus.faa.gov/api/airport-events', function(eventdata) {
+ $.getJSON('https://corsproxy.io/?url=https://nasstatus.faa.gov/api/airport-events', function(eventdata) {
       for (const airportevent of eventdata) {
         var airportdelay = {iata:"",type:"",amount:"",reason:""}
         if (airportevent.airportClosure) {
